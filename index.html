@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Savarankiskas</title>
     <link rel="stylesheet" href="style/main.css">
-    <script src="scripts/main.js" defer></script>
+    <script type="module" src="scripts/main.js" defer></script>
 </head>
 
 <body>
@@ -20,7 +20,7 @@
                     <a href="#about">Apie mus</a>
                 </li>
                 <li>
-                    <a href="#">Prekes</a>
+                    <a href="#items">Prekės</a>
                 </li>
                 <li>
                     <a href="#">Kontaktai</a>
@@ -63,8 +63,14 @@
 
         </div>
         <div id="addItems">
-            <form>
-                <input type="submit" id="addItem" name="adItem" value="Pridėti">
+            <h1>Įkelkite prekę</h1>
+            <form class="form" id="form">
+                <input type="text" name="title" id="title" placeholder="Įrašykite daikto pavadinimą"><br>
+                <input type="url" name="url" id="url" placeholder="įkelkite prekės nuotrauką"><br>
+                <input type="numer" name="price" id="price" placeholder="Įrašykite kainą"><br>
+                <input type="text" name="size" id="size" placeholder="Įrašykite dydį ir kokiam amžiui tinka"><br>
+                <input type="text" name="about" id="about" placeholder="Įrašykite trumpą prekės aprašymą"><br>
+                <input type="submit" name="submit" id="submit" value="Įkelti">
             </form>
         </div>
 
