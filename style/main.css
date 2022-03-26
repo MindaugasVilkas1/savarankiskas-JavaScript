@@ -1,79 +1,97 @@
-@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
-@import url("https://necolas.github.io/normalize.css/8.0.1/normalize.css");
-body {
-    margin: 0 auto;
-    padding: 0;
-    background-color: rgb(124, 221, 228);
-}
-
-header {
-    background-color: white;
-    width: 90%;
-    height: auto;
-    margin: 0 auto;
-    margin-top: 20px;
-}
-
-header img {
-    width: 200px;
-    height: 100px;
-}
-
-li {
-    list-style: none;
-}
-
-a {
-    color: rgb(32, 30, 30);
-    text-decoration: none;
-    font-size: 2rem;
-    font-style: italic;
-}
-
-a:hover {
-    color: rgb(124, 221, 228);
-}
-
-.navbar {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.nav-menu {
-    display: none;
-    flex-direction: column;
-    gap: 20px;
-    text-align: center;
-    width: 100%;
-}
-
-.nav-menu.show {
-    display: flex;
-}
-
-.hamburger {
-    font-size: 40px;
-    margin-right: 10px;
-    border: 0;
-    background-color: rgb(124, 221, 228);
-    display: block;
-    cursor: pointer;
-}
-
-@media screen and (min-width: 768px) {
+    @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+    @import url("https://necolas.github.io/normalize.css/8.0.1/normalize.css");
+    body {
+        margin: 0 auto;
+        padding: 0;
+        background-color: rgb(124, 221, 228);
+    }
+    
+    header {
+        background-color: rgb(255, 255, 255);
+        width: 90%;
+        height: auto;
+        margin: 0 auto;
+        margin-top: 20px;
+        ;
+    }
+    
+    header img {
+        width: 200px;
+        height: 90px;
+    }
+    
+    li {
+        list-style: none;
+    }
+    
+    a {
+        color: rgb(32, 30, 30);
+        text-decoration: none;
+        font-size: 2rem;
+        font-style: italic;
+    }
+    
+    a:hover {
+        color: rgb(124, 221, 228);
+    }
+    
     .navbar {
-        flex-wrap: nowrap;
-    }
-    .nav-menu {
         display: flex;
-        flex-direction: row;
+        flex-wrap: wrap;
         justify-content: space-between;
-        text-align: center;
-        margin-right: 10px;
+        align-items: center;
     }
-    .hamburger {
+    
+    .nav-menu {
         display: none;
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+        width: 100%;
     }
-}
+    
+    .nav-menu.show {
+        display: flex;
+    }
+    
+    .hamburger {
+        font-size: 40px;
+        margin-right: 10px;
+        border: 0;
+        background-color: rgb(124, 221, 228);
+        display: block;
+        cursor: pointer;
+    }
+    
+    .aboutButique {
+        width: 90%;
+        height: auto;
+        margin: 0 auto;
+    }
+    
+    .howItWorks {
+        text-align: center;
+    }
+    
+    @media screen and (min-width: 768px) {
+        .navbar {
+            flex-wrap: nowrap;
+        }
+        .nav-menu {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            text-align: center;
+            margin-right: 10px;
+        }
+        .hamburger {
+            display: none;
+        }
+    }
+    
+    @media screen and (min-width: 1024px) {
+        .howItWorks {
+            display: flex;
+            gap: 20px;
+        }
+    }
