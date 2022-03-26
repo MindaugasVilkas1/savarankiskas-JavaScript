@@ -73,6 +73,13 @@
         text-align: center;
     }
     
+    .getItems {
+        width: 90%;
+        height: auto;
+        margin: 0 auto;
+        text-align: center;
+    }
+    
     @media screen and (min-width: 768px) {
         .navbar {
             flex-wrap: nowrap;
@@ -87,11 +94,21 @@
         .hamburger {
             display: none;
         }
+        #items {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
     }
     
     @media screen and (min-width: 1024px) {
         .howItWorks {
             display: flex;
+            gap: 20px;
+        }
+        #items {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
             gap: 20px;
         }
     }
