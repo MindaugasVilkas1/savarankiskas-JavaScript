@@ -1,39 +1,39 @@
 {
   "Items": [
     {
-      "id": 1,
       "title": "Batukai",
-      "price": "8€",
+      "price": "8",
       "image": "https://images1.vinted.net/t/03_01bd4_gThaBX5PX7oRr7rXteYBx5HQ/310x430/1632910548.jpeg?s=1e4cff270a53e3db4e4ac60f4f441458995a0944",
       "size": "32 dydis. 10-11 metų berniukui",
-      "about": "Labai gera būklė. Nešioti vieną sezona"
+      "about": "Labai gera būklė. Nešioti vieną sezona",
+      "id": 1
     },
     {
-      "id": 2,
       "title": "Striukė",
-      "price": "35€",
+      "price": "35",
       "image": "https://images1.vinted.net/t/03_017b5_q2p6rk3CTXejszdN5iUJ9SZf/310x430/1648280202.jpeg?s=c05a8ccc05c40656b6390b87ee69541eab8bfdd6",
       "size": "12-13metų, ūgis 140cm",
-      "about": "Labai gera būklė"
+      "about": "Labai gera būklė",
+      "id": 2
     },
     {
-      "id": 3,
       "title": "Batukai",
-      "price": "12€",
+      "price": "12",
       "image": "https://images1.vinted.net/t/03_010d6_TNJYhofF5J9dShk9ttEddeR8/310x430/1648209325.jpeg?s=b68ead49ff3849fa2081caf933e7313cda4c5e90",
-      "size": "31",
-      "about": "Labai geros firmos"
+      "size": "31 tinka 8-9 metu amziui ",
+      "about": "Labai geros firmos",
+      "id": 3
     },
     {
-      "id": 4,
       "title": "striukyte",
-      "price": "19€",
+      "price": "19",
       "image": "https://images1.vinted.net/t/03_017b5_q2p6rk3CTXejszdN5iUJ9SZf/310x430/1648280202.jpeg?s=c05a8ccc05c40656b6390b87ee69541eab8bfdd6",
       "size": "iki 135 ūgio",
-      "about": "Labai gera būklė.tinka ir rudeniui ir pavasariui"
+      "about": "Labai gera būklė.tinka ir rudeniui ir pavasariui",
+      "id": 4
     },
     {
-      "title": "ffff",
+      "title": "Mergaitiskas Megstukas",
       "price": "25",
       "image": "https://skelbiu-img.dgn.lt/1_18_3214168767/vaikiskas-megztukas.jpg",
       "size": "10-12 metu amziaus 145cm",
@@ -47,6 +47,70 @@
       "size": "12-13metu, Ugis 145cm",
       "about": "Lanai grazi siuolaikiska",
       "id": 12
+    },
+    {
+      "title": "Mergaitiskas Megstukas",
+      "price": "25",
+      "image": "https://skelbiu-img.dgn.lt/1_18_3214168767/vaikiskas-megztukas.jpg",
+      "size": "10-12 metu amziaus 145cm",
+      "about": "labai faina striuke",
+      "id": 13
+    },
+    {
+      "title": "Batukai",
+      "price": "8",
+      "image": "https://images1.vinted.net/t/03_01bd4_gThaBX5PX7oRr7rXteYBx5HQ/310x430/1632910548.jpeg?s=1e4cff270a53e3db4e4ac60f4f441458995a0944",
+      "size": "32 dydis. 10-11 metų berniukui",
+      "about": "Labai gera būklė. Nešioti vieną sezona",
+      "id": 14
+    },
+    {
+      "title": "Striukė",
+      "price": "35",
+      "image": "https://images1.vinted.net/t/03_017b5_q2p6rk3CTXejszdN5iUJ9SZf/310x430/1648280202.jpeg?s=c05a8ccc05c40656b6390b87ee69541eab8bfdd6",
+      "size": "12-13metų, ūgis 140cm",
+      "about": "Labai gera būklė",
+      "id": 15
+    },
+    {
+      "title": "Batukai",
+      "price": "12",
+      "image": "https://images1.vinted.net/t/03_010d6_TNJYhofF5J9dShk9ttEddeR8/310x430/1648209325.jpeg?s=b68ead49ff3849fa2081caf933e7313cda4c5e90",
+      "size": "31",
+      "about": "Labai geros firmos",
+      "id": 16
+    },
+    {
+      "title": "striukyte",
+      "price": "19",
+      "image": "https://images1.vinted.net/t/03_017b5_q2p6rk3CTXejszdN5iUJ9SZf/310x430/1648280202.jpeg?s=c05a8ccc05c40656b6390b87ee69541eab8bfdd6",
+      "size": "iki 135 ūgio",
+      "about": "Labai gera būklė.tinka ir rudeniui ir pavasariui",
+      "id": 17
+    },
+    {
+      "title": "Batukai",
+      "price": "12",
+      "image": "https://images1.vinted.net/t/03_010d6_TNJYhofF5J9dShk9ttEddeR8/310x430/1648209325.jpeg?s=b68ead49ff3849fa2081caf933e7313cda4c5e90",
+      "size": "31 tinka 8-9 metu amziui ",
+      "about": "Labai geros firmos",
+      "id": 18
+    },
+    {
+      "title": "Batukai",
+      "price": "8",
+      "image": "https://images1.vinted.net/t/03_01bd4_gThaBX5PX7oRr7rXteYBx5HQ/310x430/1632910548.jpeg?s=1e4cff270a53e3db4e4ac60f4f441458995a0944",
+      "size": "32 dydis. 10-11 metų berniukui",
+      "about": "Labai gera būklė. Nešioti vieną sezona",
+      "id": 19
+    },
+    {
+      "title": "Batukai",
+      "price": "12",
+      "image": "https://images1.vinted.net/t/03_010d6_TNJYhofF5J9dShk9ttEddeR8/310x430/1648209325.jpeg?s=b68ead49ff3849fa2081caf933e7313cda4c5e90",
+      "size": "31 tinka 8-9 metu amziui ",
+      "about": "Labai geros firmos",
+      "id": 20
     }
   ]
 }
