@@ -95,9 +95,18 @@
         border-radius: 5px;
     }
     
-    #submitEdit {
-        display: none;
-    }
+ .editform{
+     display:none;
+     text-align: left;
+     
+ }
+ .editform input{
+    width: 310px;
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+    border-radius: 5px;
+ }
     
     @media screen and (min-width: 768px) {
         .navbar {
@@ -123,6 +132,7 @@
             flex-wrap: wrap;
             justify-content: center;
         }
+     
     }
     
     @media screen and (min-width: 1024px) {
