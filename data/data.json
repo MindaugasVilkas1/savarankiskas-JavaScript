@@ -39,6 +39,14 @@
       "size": "12-13 metų. Ūgis 135",
       "about": "Žieminė striukė su kailiuku",
       "id": 5
+    },
+    {
+      "title": "Megstukas",
+      "price": "10",
+      "image": "https://www.bemsis.lt/image/catalog/HM-megztinis4.jpg",
+      "size": "8-9 metai",
+      "about": "Labai šiltas",
+      "id": 6
     }
   ]
 }
