@@ -107,6 +107,22 @@
     text-align: center;
     border-radius: 5px;
  }
+ .contacts{
+     width: 90%;
+     margin: 0 auto;
+ }
+ .contacts a{
+     padding-right: 50px;
+ }
+i:hover{
+    color:white ;
+}
+ 
+ footer{
+     margin: 0 auto;
+     width: 90%;
+     text-align: center;
+ }
     
     @media screen and (min-width: 768px) {
         .navbar {
