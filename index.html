@@ -65,12 +65,20 @@
         <div id="addItems">
             <h1>Įkelkite prekę</h1>
             <form class="form" id="form">
-                <input type="text" name="title" id="title" placeholder="Įrašykite daikto pavadinimą"><br>
-                <input type="url" name="url" id="url" placeholder="įkelkite prekės nuotrauką"><br>
-                <input type="numer" name="price" id="price" placeholder="Įrašykite kainą"><br>
-                <input type="text" name="size" id="size" placeholder="Įrašykite dydį ir kokiam amžiui tinka"><br>
-                <input type="text" name="about" id="about" placeholder="Įrašykite trumpą prekės aprašymą"><br>
+                <input type="text" name="title" id="title" placeholder="Įrašykite daikto pavadinimą" required><br>
+                <input type="url" name="url" id="url" placeholder="įkelkite prekės nuotrauką" required><br>
+                <input type="text" name="price" id="price" placeholder="Įrašykite kainą" required><br>
+                <input type="text" name="itemSize" id="size" placeholder="Įrašykite dydį ir kokiam amžiui tinka" required><br>
+                <input type="text" name="about" id="about" placeholder="Įrašykite trumpą prekės aprašymą" required><br>
                 <input type="submit" name="submit" id="submit" value="Įkelti">
+            </form>
+            <form class="editform" id="editform">
+                <input type="text" name="edittitle" id="edittitle" placeholder="Įrašykite daikto pavadinimą" required><br>
+                <input type="url" name="editurl" id="editurl" placeholder="įkelkite prekės nuotrauką" required><br>
+                <input type="text" name="editprice" id="editprice" placeholder="Įrašykite kainą" required><br>
+                <input type="text" name="editItemSize" id="editItemSize" placeholder="Įrašykite dydį ir kokiam amžiui tinka" required><br>
+                <input type="text" name="editabout" id="editabout" placeholder="Įrašykite trumpą prekės aprašymą" required><br>
+                <input type="submit" name="submitEdit" id="submitEdit" value="Patvirtinti Redagavimą">
             </form>
         </div>
 
