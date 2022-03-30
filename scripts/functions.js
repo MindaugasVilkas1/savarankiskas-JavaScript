@@ -7,13 +7,13 @@
      fetch(`http://localhost:3000/Items/${id}`)
          .then(res => res.json())
          .then(data => {
-             const form = document.querySelector("#form");
+             const form = document.querySelector("#editform");
              form.elements.submitEdit.id = data.id;
-             form.elements.title.value = data.title;
-             form.elements.url.value = data.image;
-             form.elements.price.value = data.price;
-             form.elements.itemSize.value = data.size;
-             form.elements.about.value = data.about;
+             form.elements.edittitle.value = data.title;
+             form.elements.editurl.value = data.image;
+             form.elements.editprice.value = data.price;
+             form.elements.editItemSize.value = data.size;
+             form.elements.editabout.value = data.about;
 
          })
  }

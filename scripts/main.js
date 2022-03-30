@@ -1,36 +1,41 @@
 import Items from "./class.js";
+import { getItems, editForm, deleteItem } from "./functions.js";
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
-hamburger.addEventListener("click", () => {
-    navMenu.classList.toggle("show")
-})
+hamburger.addEventListener("click", () => navMenu.classList.toggle("show"))
 
 fetch("http://localhost:3000/Items")
     .then(res => res.json())
     .then(data => {
         console.log(data)
-        data.forEach(element => getItems(element))
+        data.forEach(element => getItems(element));
+        document.querySelectorAll("#delete").forEach(btn => {
+        btn.addEventListener("click", e => {
+                deleteItem(e.target.parentElement.id)
+            })
+        })
         document.querySelectorAll("#edit").forEach(btn => {
             btn.addEventListener("click", e => {
-                console.log(e.target.parentElement);
+                console.log(e.target.parentElement.id)
                 editForm(e.target.parentElement.id);
-                window.location.href = "#form";
+                let submitform = document.querySelector("#form")
+                submitform.style.display = "none"
+                let editform=document.querySelector("#editform")
+                editform.style.display="block";
+                window.location.href = "#editform";
             })
 
         })
 
     })
+    .catch(err => console.log(err, "Įvyko klaida, patikrinkite duomenis"))
 
-
-
-
-.catch(err => console.log(err, "Įvyko klaida, patikrinkite duomenis"))
 document.querySelector("#form").addEventListener("submit", e => {
-    e.preventDefault()
+    e.preventDefault();
     let title = e.target.elements.title.value;
     let image = e.target.elements.url.value;
     let price = e.target.elements.price.value;
-    let size = e.target.elements.size.value;
+    let size = e.target.elements.itemSize.value;
     let about = e.target.elements.about.value;
     let items = new Items(title, image, price, size, about)
     fetch("http://localhost:3000/Items", {
@@ -42,50 +47,23 @@ document.querySelector("#form").addEventListener("submit", e => {
         body: JSON.stringify(items)
     })
 
-})
-document.querySelector("#form").addEventListener("submit", e => {
-    e.preventDefault();
-    let itemDataId = e.target.elements.submit.id
-    let title = e.target.elements.title.value;
-    let image = e.target.elements.url.value;
-    let price = e.target.elements.price.value;
-    let size = e.target.elements.size.value;
-    let about = e.target.elements.about.value;
+});
+document.querySelector("#editform").addEventListener("submit", e => {
+    e.preventDefault()
+    const id = e.target.elements.submitEdit.id;
+    let title = e.target.elements.edittitle.value;
+    let image = e.target.elements.editurl.value;
+    let price = e.target.elements.editprice.value;
+    let size = e.target.elements.editItemSize.value;
+    let about = e.target.elements.editabout.value;
     let items = new Items(title, image, price, size, about)
-    fetch(`http://localhost:3000/Items/${itemDataId}`, {
+    console.log(id)
+    fetch(`http://localhost:3000/Items/${id}`, {
         method: "PUT",
         headers: {
             "Content-type": "application/json",
-            "Accept": "application/json plain/text "
+           "Accept": "application/json plain/text "
         },
         body: JSON.stringify(items)
     })
-
-})
-let editForm = (id) => {
-    fetch(`http://localhost:3000/Items/${id}`)
-        .then(res => res.json())
-        .then(data => {
-            const form = document.querySelector("#form");
-            form.elements.submit.id = data.id;
-            form.elements.title.value = data.title;
-            form.elements.url.value = data.image;
-            form.elements.price.value = data.price;
-            form.elements.size.value = data.size;
-            form.elements.about.value = data.about;
-        })
-}
-
-
-let getItems = (item) => {
-    document.querySelector("#items").innerHTML += `
-    <div class=allItems id="${item.id}">
-        <h3>${item.title}</h3>
-        <img src="${item.image}"><br>
-        <span>Kaina: ${item.price}€</span><br>
-        <span>Dydis: ${item.size}. ${item.about}</span><br>
-        <input type="submit" name="edit" id="edit" value="Redaguoti">
-        <input type="submit" name="delete" id="delete" value="Trinti">
-    </div>
-    `
-}
+});
